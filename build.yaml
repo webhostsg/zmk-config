@@ -15,4 +15,3 @@
 include:
   - board: scylla_left
   - board: scylla_right
-    shield: settings_reset
