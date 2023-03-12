@@ -62,7 +62,7 @@
 &kp LC(LALT) &kp LEFT      &bt BT_SEL 1 &kp K_CMENU  &trans       &trans                   &kp PG_UP &kp LA(LEFT)   &kp UP   &kp LA(RIGHT) &kp N0  &trans
 &kp LC(LALT) &kp RIGHT     &kp LCTRL    &kp LSHFT    &trans       &trans                   &kp PG_DN &kp LEFT       &kp DOWN &kp RIGHT     &kp DEL &kp BSPC
 &out OUT_TOG &bootloader   &reset    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans         &trans   &reset        &bootloader  &trans
-                           &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans         &trans   &trans
+                           &trans       &trans       &trans       &trans  &rgb_ug RGB_TOG   &trans  &trans    &trans         &trans   &trans
             >;
 
 
