@@ -16,23 +16,6 @@
   // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
   sck-pin = <21>;
   miso-pin = <19>;
-
-  led_strip: ws2812@0 {
-    compatible = "worldsemi,ws2812-spi";
-    label = "WS2812";
-
-    /* SPI */
-    reg = <0>; /* ignored, but necessary for SPI bindings */
-    spi-max-frequency = <4000000>;
-
-    /* WS2812 */
-    chain-length = <29>; /* number of LEDs */
-    spi-one-frame = <0x70>;
-    spi-zero-frame = <0x40>;
-    color-mapping = <LED_COLOR_ID_GREEN
-                          LED_COLOR_ID_RED
-                          LED_COLOR_ID_BLUE>;
-  };
 };
 / {
 
@@ -43,6 +26,24 @@ leds {
     label = "Blue LED";
   };
 };
+
+led_strip: ws2812@0 {
+  compatible = "worldsemi,ws2812-spi";
+  label = "WS2812";
+
+  /* SPI */
+  reg = <0>; /* ignored, but necessary for SPI bindings */
+  spi-max-frequency = <4000000>;
+
+  /* WS2812 */
+  chain-length = <29>; /* number of LEDs */
+  spi-one-frame = <0x70>;
+  spi-zero-frame = <0x40>;
+  color-mapping = <LED_COLOR_ID_GREEN
+                        LED_COLOR_ID_RED
+                        LED_COLOR_ID_BLUE>;
+};
+
 ext-power {
     compatible = "zmk,ext-power-generic";
     label = "EXT_POWER";
