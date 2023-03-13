@@ -31,7 +31,7 @@
 
 
         };
-    }
+    
         lower_layer {
         label = "lwr";
 // TODO: Some binds are waiting for shifted keycode support.
