@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
 #include "scylla.dtsi"
-/ {
 
 &spi1 {
   compatible = "nordic,nrf-spim";
@@ -36,6 +35,8 @@
                           LED_COLOR_ID_BLUE>;
   };
 };
+
+/ {
 
 leds {
   compatible = "gpio-leds";

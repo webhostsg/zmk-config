@@ -12,7 +12,6 @@
 &default_transform {
   col-offset = <6>;
 };
-/ {
 
 &spi1 {
   compatible = "nordic,nrf-spim";
@@ -40,6 +39,7 @@
   };
 };
 
+/ {
 leds {
   compatible = "gpio-leds";
   blue_led: led_0 {
