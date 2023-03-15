@@ -39,7 +39,7 @@
 // |       |     |     |      |      |      |                   | PSCRN|  7    |  8    |  9   |       |   +   |
 // |       |     |     |      |      |      |                   |      |  4    |  5    |  6   |   /   |   *   |
 // |       |     |     |      |      |      |        |  |       |  0   |  1    |  2    |  3   |   .   |   =   |
-//               | GUI | ALT  | CTRL | SPACE|  LOWER |  |   <   |   >  |  ^  | DEL    |  V   |
+//               |     |      |      |      |        |  | Left  | Right|  Up  | DEL    | Down |
 
             bindings = <
 &kp F1    &kp F2  &kp F3   &kp F4   &kp F5    &kp F6                      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11       &kp F12
@@ -55,17 +55,18 @@
         raise_layer {
           label = "rse";
 // ------------------------------------------------------------------------------------------------------------
-// |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-// |     | INS  | PSCR | GUI   |       |      |                | PGUP | NW   |   ^   |  PW  |       |       |
-// |     | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
-//              |      |       |       |      |      |  |      |      |      |       |      |
+// | BTCLR | BT1 | BT2 | BT3  |      |  OUT |                   |      |       |       |      |       |       |
+// |RGB TOG|     |     |      |      |      |                   |      |       |       |      |       |       |
+// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
+// | BOOT  |     |     |      |      | RESET|        |  |       |RESET |       |       |      |       | BOOT  |
+//               |     |      |      |      |        |  |       |      |       |       |      |
+
             bindings = <
-&out OUT_BLE &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans         &trans   &trans        &trans  &bt BT_CLR
-&kp LC(LALT) &kp LEFT      &bt BT_SEL 1 &kp K_CMENU  &trans       &trans                   &kp PG_UP &kp LA(LEFT)   &kp UP   &kp LA(RIGHT) &kp N0  &trans
-&kp LC(LALT) &kp RIGHT     &kp LCTRL    &kp LSHFT    &trans       &trans                   &kp PG_DN &kp LEFT       &kp DOWN &kp RIGHT     &kp DEL &kp BSPC
-&out OUT_TOG &bootloader   &reset    &kp K_COPY   &kp K_PASTE  &rgb_ug RGB_TOG  &trans   &trans  &trans    &trans         &trans   &reset        &bootloader  &trans
-                           &trans       &trans       &trans       &trans     &trans  &trans    &trans   &trans   &trans   &trans
+&bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans   &out OUT_TOG     &trans      &trans      &trans      &trans      &trans      &trans
+&rgb_ug RGB_TOG  &trans        &trans   &trans   &trans    &trans                    &trans      &trans      &trans      &trans      &trans      &trans
+&trans           &trans        &trans   &trans   &trans    &trans                    &trans      &trans      &trans      &trans      &trans      &trans
+&bootloader      &trans        &trans   &trans   &trans    &reset   &trans   &trans  &reset      &trans      &trans      &trans      &trans      &bootloader
+                 &trans        &trans   &trans   &trans    &trans            &trans &trans &trans &trans &trans
             >;
 
 
