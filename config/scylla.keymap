@@ -15,11 +15,11 @@
         default_layer {
             label = "def";
 // ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
 // |  `    |  Q  |  W  |  F   |  P   |  G   |                   |  J   |  L    |  U    |  Y   |   ;   | BKSPC |
 // |  TAB  |  A  |  R  |  S   |  T   |  D   |                   |  H   |  N    |  E    |  I   |   O   |   '   |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |        |  |       |  K   |  M    |  ,    |  .   |   /   | SHIFT |
-//               | GUI | ALT  | CTRL | SPACE|  LOWER |  | RAISE | ENTER| GUI  | DEL    | CTRL  |
+//               |SPACE| CTRL | LOWER| GUI  | LALT   |  | DEL | RCTRL |  RAISE  | GUI   | ENTER |
 
             bindings = <
 &kp ESC   &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                      &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp MINUS
@@ -59,14 +59,14 @@
 // |RGB TOG|     |     |      |      |      |                   |      |       |       |      |       |       |
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 // | BOOT  |     |     |      |      | RESET|        |  |       |RESET |       |       |      |       | BOOT  |
-//               |     |      |      |      |        |  |       |      |       |       |      |
+//     |     | RGB_BRI | RGB_EFF | RGB_BRD | RGB_EFR |  |      |       |       |      |
 
             bindings = <
 &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans   &out OUT_TOG     &trans      &trans      &trans      &trans      &trans      &trans
-&rgb_ug RGB_TOG  &trans        &trans   &trans   &trans    &trans                    &trans      &trans      &trans      &trans      &trans      &trans
-&trans           &trans        &trans   &trans   &trans    &trans                    &trans      &trans      &trans      &trans      &trans      &trans
-&bootloader      &trans        &trans   &trans   &trans    &reset   &trans   &trans  &reset      &trans      &trans      &trans      &trans      &bootloader
-                 &trans        &trans   &trans   &trans    &trans            &trans &trans &trans &trans &trans
+&rgb_ug RGB_TOG  &trans  &trans   &trans   &trans    &trans                    &trans      &trans      &trans      &trans      &trans      &trans
+&trans           &trans  &trans   &trans   &trans    &trans                    &trans      &trans      &trans      &trans      &trans      &trans
+&bootloader      &trans  &trans   &trans   &trans    &reset   &trans   &trans  &reset      &trans      &trans      &trans      &trans      &bootloader
+        &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &trans  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD            &trans &trans &trans &trans &trans
             >;
 
 
