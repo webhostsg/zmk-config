@@ -55,14 +55,14 @@
         raise_layer {
           label = "rse";
 // ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1 | BT2 | BT3  |      |  OUT |                   |      |       |       |      |       |       |
+// | BTCLR | BT1 | BT2 | BT3  |      |  OUT |                   |      |       |       |      |       | BTCLR |
 // |RGB TOG|     |     |      |      |      |                   |      |       |       |      |       |       |
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 // | BOOT  |     |     |      |      | RESET|        |  |       |RESET |       |       |      |       | BOOT  |
 //     |     | RGB_BRI | RGB_EFF | RGB_BRD | RGB_EFR |  |      |       |       |      |
 
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans   &out OUT_TOG     &trans      &trans      &trans      &trans      &trans      &trans
+&bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &out OUT_TOG    &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
 &rgb_ug RGB_TOG  &trans  &trans   &trans   &trans    &trans                    &trans      &trans      &trans      &trans      &trans      &trans
 &trans           &trans  &trans   &trans   &trans    &trans                    &trans      &trans      &trans      &trans      &trans      &trans
 &bootloader      &trans  &trans   &trans   &trans    &reset   &trans   &trans  &reset      &trans      &trans      &trans      &trans      &bootloader
