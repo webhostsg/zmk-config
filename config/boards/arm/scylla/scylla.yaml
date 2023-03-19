@@ -1,6 +1,6 @@
 identifier: scylla
 name: Scylla
-type: mcu
+type: keyboard
 arch: arm
 toolchain:
   - zephyr
@@ -13,3 +13,6 @@ supported:
   - ieee802154
   - pwm
   - watchdog
+  - spi
+  - gpio
+  - kscan
