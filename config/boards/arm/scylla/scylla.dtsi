@@ -31,7 +31,7 @@
     vbatt: vbatt {
   		compatible = "zmk,battery-voltage-divider";
   		label = "BATTERY";
-  		io-channels = <&adc 25>; // could be adc 1
+  		io-channels = <&adc 2>; // could be adc 1
   		output-ohms = <2000000>;
   		full-ohms = <(2000000 + 806000)>;
   	};
