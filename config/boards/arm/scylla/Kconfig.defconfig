@@ -31,10 +31,6 @@ config SPI
     bool
     default y
 
-config SPI
-    bool
-    default y
-
 config BT_CTLR
 	default BT
 
@@ -56,9 +52,5 @@ endif # USB
 
 config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
-
-config SPI
-	default y
-
 
 endif # BOARD_SCYLLA_LEFT || BOARD_SCYLLA_RIGHT
