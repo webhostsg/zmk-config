@@ -91,8 +91,8 @@
           label = "rse";
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 | BT2 | BT3  |      |  OUT |                   |      |       |       |      |       | BTCLR |
-// |RGB TOG|     |     |      | LBKT | RBKT |                   |      |       |       |      |       |       |
-// |       |     |     |      | LBRC | RBRC |                   |      |       |       |      |       |       |
+// |RGB TOG|     |     | PIPE | LBKT | RBKT |                   |      |       |       |      |       |       |
+// |       |     |     | BSLH | LBRC | RBRC |                   |      |       |       |      |       |       |
 // | BOOT  |     |     |      |      | RESET|        |  |       |RESET |       |       |      |       | BOOT  |
 //     |     | RGB_BRI | RGB_EFF | RGB_BRD | RGB_EFR |  |      |       |       |      |
 
