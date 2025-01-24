@@ -33,7 +33,6 @@
 
     vbatt: vbatt {
   		compatible = "zmk,battery-voltage-divider";
-  		label = "BATTERY";
   		io-channels = <&adc 2>; // could be adc 1
   		output-ohms = <2000000>;
   		full-ohms = <(2000000 + 806000)>;
@@ -60,7 +59,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,0) RC(4,6) RC(3,11) RC(3,10
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
         diode-direction = "row2col";
 
     };
@@ -82,7 +80,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,0) RC(4,6) RC(3,11) RC(3,10
     status = "okay";
     cdc_acm_uart: cdc_acm_uart {
         compatible = "zephyr,cdc-acm-uart";
-        label = "CDC_ACM_0";
     };
 };
 

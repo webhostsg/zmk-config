@@ -11,7 +11,6 @@
 / {
     macros {
         mac_power: mac_power {
-            label = "ZM_mac_power";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -21,23 +20,12 @@
                 ;
         };
         mac_force: mac_force {
-            label = "ZM_mac_force";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL &kp LCMD>
                 , <&macro_tap &kp C_PWR>
                 , <&macro_release &kp LCTRL &kp LCMD>
-                ;
-        };
-        mis_ctrl: mis_ctrl {
-            label = "ZM_mis_ctrl";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp UP>
-                , <&macro_release &kp LCTRL>
                 ;
         };
     };
@@ -48,7 +36,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "def";
 // ------------------------------------------------------------------------------------------------------------
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
 // |  `    |  Q  |  W  |  F   |  P   |  G   |                   |  J   |  L    |  U    |  Y   |   ;   | BKSPC |
@@ -68,13 +55,12 @@
         };
     
         lower_layer {
-        label = "lwr";
 // ------------------------------------------------------------------------------------------------------------
 // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |   F11 |  F12  |
-// |Mac Pwr|     |     |      |      |      |                   | PSCRN|  7    |  8    |  9   |   -   |   +   |
-// |ForcePw|     |     |      |      |      |                   |      |  4    |  5    |  6   |   /   |   *   |
-// |       |     |     |      |      |      |        |  |       |  0   |  1    |  2    |  3   |   .   |   =   |
-//               |     |      |      |Mis Ctr|       |  | LFT   | RGT  |  UP   | DEL    | DWN |
+// |Mac Pwr|     |     |      |      |  VUp |                   | PSCRN|  7    |  8    |  9   |   -   |   +   |
+// |ForcePw|     |     |      |      |  VDN |                   |      |  4    |  5    |  6   |   /   |   *   |
+// |       |     |     |      |      | Mute |        |  |       |  0   |  1    |  2    |  3   |   .   |   =   |
+//               |     |      |      |      |       |  | LFT   | RGT  |  UP   | DEL    | DWN |
 
             bindings = <
 &kp F1     &kp F2  &kp F3   &kp F4   &kp F5    &kp F6                      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11       &kp F12
@@ -88,7 +74,6 @@
         };
 
         raise_layer {
-          label = "rse";
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 | BT2 | BT3  |      |  OUT |                   |      |       |       |      |       | BTCLR |
 // |RGB TOG|     |     | PIPE | LBKT | RBKT |                   |      |       |       |      |       |       |
