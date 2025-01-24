@@ -28,9 +28,6 @@
     };
 
 
-
-
-
     vbatt: vbatt {
   		compatible = "zmk,battery-voltage-divider";
   		io-channels = <&adc 2>; // could be adc 1
