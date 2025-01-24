@@ -1,6 +1,6 @@
 &pinctrl {
     /* configuration for spi0 device, default state */
-    spi0_default: spi0_default {
+    spi3_default: spi3_default {
         /* node name is arbitrary */
         group1 {
             /* main role: configure P0.01 as SPI clock, P0.02 as SPI MOSI, P0.03 as SPI MISO */
@@ -11,7 +11,7 @@
     };
 
     /* configuration for spi0 device, sleep state */
-    spi0_sleep: spi0_sleep {
+    spi3_sleep: spi3_sleep {
         group1 {
             /* main role: configure P0.01 as SPI clock, P0.02 as SPI MOSI, P0.03 as SPI MISO */
             psels = <NRF_PSEL(SPIM_SCK, 0, 1)>,
