@@ -40,7 +40,7 @@ kscan0: kscan {
     };
 };
 
-&spi3 {
+&spi4 {
   compatible = "nordic,nrf-spim";
   status = "okay";
 
