@@ -1,1 +1,18 @@
+/*
+ * Copyright (c) 2023 The ZMK Contributors
+ * SPDX-License-Identifier: MIT
+ */
 
+&pinctrl {
+    spi3_default: spi3_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 22)>;
+        };
+    };
+    spi3_sleep: spi3_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 22)>;
+            low-power-enable;
+        };
+    };
+};
