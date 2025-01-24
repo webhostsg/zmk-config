@@ -70,7 +70,7 @@
 // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |   F11 |  F12  |
 // |Mac Pwr|     |     |      |      | C_VOL_UP |                   | PSCRN|  7    |  8    |  9   |   -   |   +   |
 // |ForcePw|     |     |      |      | C_VOL_DN |                   |      |  4    |  5    |  6   |   /   |   *   |
-// |       |     |     |      |      | C_MUTE |        |  |       |  0   |  1    |  2    |  3   |   .   |   =   |
+// |       |     |     |      |      | C_MUTE   |        |  |       |  0   |  1    |  2    |  3   |   .   |   =   |
 //               |     |      |      |         |       |  | LFT   | RGT  |  UP   | DEL    | DWN |
 
             bindings = <
