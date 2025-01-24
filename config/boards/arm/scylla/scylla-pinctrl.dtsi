@@ -16,12 +16,12 @@
             low-power-enable;
         };
     };
-    pwm0_default: spi3_default {
+    pwm0_default: pwm0_default {
         group1 {
             psels = <NRF_PSEL(SPIM_MOSI, 0, 22)>;
         };
     };
-    pwm0_sleep: spi3_sleep {
+    pwm0_sleep: pwm0_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_MOSI, 0, 22)>;
             low-power-enable;
