@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
 #include "scylla.dtsi"
+#include "scylla_left-pinctrl.dtsi"
 / {
 
 leds {
