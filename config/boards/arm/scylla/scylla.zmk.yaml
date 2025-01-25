@@ -1,0 +1,15 @@
+file_format: "1"
+id: scylla
+name: BastardKB Scylla
+type: board
+url: https://github.com/webhostsg/zmk-config
+arch: arm
+features:
+  - keys
+  - underglow
+outputs:
+  - usb
+  - ble
+siblings:
+  - scylla_left
+  - scylla_right
