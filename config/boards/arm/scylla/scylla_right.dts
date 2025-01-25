@@ -42,7 +42,7 @@ kscan0: kscan {
   col-offset = <6>;
 };
 
-&spi1 {
+&spi3 {
   status = "okay";
   pinctrl-0 = <&spi1_default>;
   pinctrl-1 = <&spi1_sleep>;
