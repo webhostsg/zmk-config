@@ -14,4 +14,6 @@
 ---
 include:
   - board: scylla_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: scylla_right
